@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signature</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div>
+    <div class="main">
       <div class="top">
         <div class="signDesign">
           <p>Text colour picker</p>
@@ -27,6 +35,18 @@
             <option value="40">40px</option>
           </select>
         </div>
+      </div>
+      <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+      <div class="bottom">
+        <button type="button" class="btn btn-danger" id="clearButton">
+          Clear
+        </button>
+        <button type="button" class="btn btn-success" id="saveButton">
+          Save & download
+        </button>
+        <button type="button" class="btn btn-warning" id="retrieveButton">
+          Retrieve signature
+        </button>
       </div>
     </div>
   </body>

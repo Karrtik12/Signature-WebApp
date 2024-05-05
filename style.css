@@ -1,0 +1,30 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.canvas {
+  border: 2px solid black;
+}
+.top,
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.top > .signDesign,
+.bottom > button {
+  margin: 20px;
+}
+.signDesign > p {
+  text-align: center;
+  margin: 10px auto;
+}
+.signDesign,
+input,
+button,
+select {
+  width: 100%;
+}
